@@ -101,12 +101,15 @@ input {
 }
 .dark-bc {
     background-color: rgb(var(--darker-color));
+    color: rgb(var(--lighter-color));
 }
 .light-bc {
     background-color: rgb(var(--lighter-color));
+    color: rgb(var(--darker-color));
 }
 .primary-bc {
     background-color: rgb(var(--primary-color));
+    color: rgb(var(--darker-color));
 }
 .valid-bc {
     background-color: rgb(var(--valid-color));
@@ -114,16 +117,31 @@ input {
 .error-bc {
     background-color: rgb(var(--error-color));
 }
+.valid-text {
+    color: rgb(var(--valid-color));
+}
+.error-text {
+    color: rgb(var(--error-color));
+}
 header, .resources .flex, .colors-container {
+    padding: 0 2rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*-----------------------------navigation*/
+nav.flex {
+    min-height: 80px;
+    align-items: center;
+}
 .navbar li a {
-    padding: 0 1rem;
+    padding: 0 .8rem;
 }
 
 /*--------------------------------content*/
+.typo-container {
+    padding: 4rem 2rem
+}
 
 /*---------------------------------divers*/
 
